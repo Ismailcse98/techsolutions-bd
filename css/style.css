@@ -1,0 +1,185 @@
+/*Yello : #FFA001*/
+/*Balck : #444444*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap');
+body{
+	overflow: hidden;
+	font-family: 'Manrope', sans-serif;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+ul li{
+	display: inline-block;
+}
+a{
+	text-decoration: none;
+}
+img{
+	width: 100%;
+}
+/*top-manu-section*/
+.top-manu-section .top-nav-social-icon{
+	position: relative;
+}
+.top-manu-section .top-nav-social-icon:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: -1000px;
+	background: #FFA001;
+}
+.top-manu-section .top-nav-social-icon:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 100%;
+	border-top: 22px solid #FFA001;
+	border-bottom: 20px solid transparent;
+	border-left: 20px solid transparent;
+	border-right: 20px solid #FFA001;
+}
+.top-manu-section .top-nav-social-icon .support-section ul{
+	text-align: center;
+	padding-top: 10px;
+}
+.top-manu-section .top-nav-social-icon .support-section ul li a,
+.top-manu-section .top-nav-social-icon .top-social-icon a i{
+	color: #fff;
+	font-size: 16px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-decoration: none;
+}
+.top-manu-section .top-nav-social-icon .top-social-icon{
+	background: #444444;
+	text-align: center;
+	padding: 11px;
+}
+
+/*main-manu-section*/
+.main-manu-section{
+	background: #444444;
+	margin: 5px 0;
+}
+.main-manu-section .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-brand {
+    width: 250px;
+}
+.main-manu-section .navbar-default ul{
+	margin-top: 25px;
+}
+.main-manu-section .navbar-default .navbar-nav>li>a{
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+}
+.main-manu-section .navbar-default .navbar-nav>li>a:before{
+	content: '';
+	position: absolute;
+	height: 2px;
+	background: #FFA001;
+	bottom: 0;
+	left: 0;
+	right: 100%;
+	transition: .5s;
+}
+.main-manu-section .navbar-default .navbar-nav>li>a:hover:before{
+	right: 0;
+}
+.navbar-default .navbar-toggle {
+    margin-top: 50px;
+    border-color: transparent;
+    color: #fff;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 991px) {
+	.top-manu-section .top-nav-social-icon .support-section ul li a,
+	.top-manu-section .top-nav-social-icon .top-social-icon a i {
+	    margin-left: 5px;
+	    margin-right: 5px;
+	}
+	.main-manu-section .navbar-default .navbar-nav>li>a {
+	    margin: 0;
+	    padding: 12px 3px;
+	}
+	.navbar-brand {
+	    width: 200px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.top-manu-section .top-nav-social-icon:after {
+	    border-top: 55px solid #FFA001;
+	    border-left: 55px solid transparent;
+	}
+	.main-manu-section .navbar-default{
+		position: relative;
+	}
+	.main-manu-section .navbar-default .nav-open-close {
+	    position: absolute;
+	    background: #444444;
+	    width: 107.4%;
+	    top: 129%;
+	    left: -1000px;
+	    margin-left: -16px;
+	    transition: 1s;
+	    padding-left: 65px;
+	}
+	.main-manu-section .navbar-default .navbar-toggle .icon-bar {
+	    background-color: #fff;
+	}
+	.main-manu-section .navbar-default .nav-open-close.show{
+		left: 0px;
+	}
+	.main-manu-section .navbar-default .navbar-toggle.close i {
+		color: #fff;
+	}
+	.main-manu-section .navbar-default .navbar-toggle.close i{
+		/*font-size: 20px;
+		padding: 10px 12px;*/
+	}
+	.main-manu-section .navbar-default .navbar-toggle.close i:before{
+		content: '\f00d';
+	}
+	.main-manu-section .navbar-default .navbar-toggle {
+	    margin-top: 20px;
+	}
+	.main-manu-section .navbar-default .navbar-toggle.close{
+		margin-top: 30px;
+		margin-right: 26px;
+	}
+	.main-manu-section .navbar-default .navbar-collapse,
+	.main-manu-section .navbar-default .navbar-form {
+	    border-color: #444444;
+	}
+}
+@media screen and (max-width: 346px) {
+	.top-manu-section .top-nav-social-icon:after {
+	    border-top: 75px solid #FFA001;
+	    border-left: 75px solid transparent;
+	}
+}
+@media screen and (max-width: 249px) {
+	.top-manu-section .top-nav-social-icon:after {
+	    border-top: 98px solid #FFA001;
+	    border-left: 98px solid transparent;
+	}
+}
